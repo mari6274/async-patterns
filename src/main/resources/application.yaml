@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: false
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:file:/tmp/jug
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        concurrency: 5
