@@ -23,8 +23,4 @@ public class ApplicationController {
         submitApplicationProcessor.process(application);
     }
 
-    @GetMapping("/list")
-    public Iterable<ApplicationEntity> listApplications() {
-        return applicationRepository.findAll();
-    }
 }
