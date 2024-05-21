@@ -48,6 +48,6 @@ public class PartnerSubmitApplicationRabbitTransactedMessageRelay {
 
         results.forEach((key, value) -> outboxRepository.updateSetStatusWhereIdIn(
                 value.stream().map(OutboxEntity::getId).toList(), key));
-        log.info("Done in: {}", Duration.ofMillis(System.currentTimeMillis() - currentTimeMillis));
+        log.debug("Done in: {}", Duration.ofMillis(System.currentTimeMillis() - currentTimeMillis));
     }
 }
