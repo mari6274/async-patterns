@@ -1,0 +1,23 @@
+# @name submitApplication
+POST http://localhost:8080/applications/submit
+Content-Type: application/json
+
+{
+  "firstName": "Mariusz",
+  "lastName": "Mączkowski",
+  "profession": "PROGRAMMER",
+  "incomeAmount": 1
+}
+
+###
+
+# @name submitApplicationMillionIncome
+POST http://localhost:8080/applications/submit
+Content-Type: application/json
+
+{
+"firstName": "Mariusz",
+"lastName": "Mączkowski",
+"profession": "PROGRAMMER",
+"incomeAmount": 100000000
+}
