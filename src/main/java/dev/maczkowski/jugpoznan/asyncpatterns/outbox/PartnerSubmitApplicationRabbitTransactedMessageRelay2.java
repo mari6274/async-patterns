@@ -40,6 +40,6 @@ public class PartnerSubmitApplicationRabbitTransactedMessageRelay2 {
                     outboxRepository.save(outboxEntity);
                 });
 
-        log.info("Done in: {}", Duration.ofMillis(System.currentTimeMillis() - currentTimeMillis));
+        log.debug("Done in: {}", Duration.ofMillis(System.currentTimeMillis() - currentTimeMillis));
     }
 }

@@ -67,6 +67,6 @@ public class PartnerSubmitApplicationRabbitPublishConfimMessageRelay2 {
                     } catch (Exception e) {
                     }
                 });
-        log.info("Done in: {}", Duration.ofMillis(System.currentTimeMillis() - currentTimeMillis));
+        log.debug("Done in: {}", Duration.ofMillis(System.currentTimeMillis() - currentTimeMillis));
     }
 }

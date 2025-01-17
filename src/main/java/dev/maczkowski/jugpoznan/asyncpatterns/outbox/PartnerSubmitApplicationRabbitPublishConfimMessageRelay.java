@@ -94,6 +94,6 @@ public class PartnerSubmitApplicationRabbitPublishConfimMessageRelay {
                     log.debug("Updating to {}: {}", e.getKey(), ids);
                     outboxRepository.updateSetStatusWhereIdIn(ids, e.getKey());
                 });
-        log.info("Done in: {}", Duration.ofMillis(System.currentTimeMillis() - currentTimeMillis));
+        log.debug("Done in: {}", Duration.ofMillis(System.currentTimeMillis() - currentTimeMillis));
     }
 }
