@@ -18,7 +18,7 @@ public class PartnerApiMockController {
 
     @PostMapping("/submitApplication")
     public ResponseEntity<Void> submitApplication(@RequestBody Application application) throws InterruptedException {
-        Thread.sleep(Duration.ofSeconds(5));
+        Thread.sleep(Duration.ofSeconds(3));
         if (application.incomeAmount() == 100000000) {
             log.error("<PARTNER SYSTEM> error: {}", application);
             return ResponseEntity.internalServerError().build();
