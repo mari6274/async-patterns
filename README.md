@@ -1,3 +1,6 @@
+![main workflow badge](https://github.com/mari6274/async-patterns/actions/workflows/build.yml/badge.svg?branch=main)
+![workflow badge](https://github.com/mari6274/async-patterns/actions/workflows/build.yml/badge.svg)
+
 This project has been prepared as an "example" part of my presentation titled "Asynchronous communication
 patterns with RabbitMQ".
 
